@@ -11,6 +11,7 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
     --bg-all: #f2f2fc;
+    /* --bg-all: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%); */
 }
 
 body.dark {
@@ -756,6 +757,24 @@ h3.my-profession {
     padding: 0 50px;
 }
 
+footer {
+    background: var(--bg-all);
+    /* min-height: 100vh; */
+    display: block;
+    opacity: 1;
+    padding: 0 30px;
+    background-attachment: fixed;
+}
+
+footer p {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    left: 50%;
+    color: var(--text-black-900);
+    display: flex;
+}
+
 @media (max-width: 1199px) {
     .aside {
         left: -270px;
@@ -766,12 +785,6 @@ h3.my-profession {
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
-    }
-    div#hidenn {
-        display: none;
-    }
-    div#hidden {
-        display: flex;
     }
 }
 
@@ -803,8 +816,4 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
-
-div#hidden {
-    display: none;
 }
